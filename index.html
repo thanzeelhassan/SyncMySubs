@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subtitle Shifter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Subtitle Shifter</h1>
+
+      <div class="card">
+        <label class="row"
+          ><span>Subtitle file</span>
+          <input id="fileInput" type="file" accept=".srt,text/plain" />
+        </label>
+
+        <label class="row"
+          ><span>Shift (seconds)</span>
+          <input id="shiftInput" type="number" step="0.1" value="2" />
+        </label>
+
+        <div class="buttons">
+          <button id="previewBtn">Preview</button>
+          <button id="applyBtn">Apply & Download</button>
+        </div>
+
+        <label class="row"
+          ><span>Preview / Output</span>
+          <textarea id="output" rows="14" readonly></textarea>
+        </label>
+
+        <p class="hint">
+          Enter a positive value to move subtitles forward, negative to move
+          back. Timestamps will be clamped at 00:00:00,000.
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
