@@ -2,7 +2,7 @@ https://thanzeelhassan.github.io/SyncMySubs
 
 # SyncMySubs
 
-A simple tool to shift subtitle timings in an SRT file.
+A simple tool to shift subtitle timings in a SRT file.
 
 How to use 
 
